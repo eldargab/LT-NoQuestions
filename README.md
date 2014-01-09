@@ -1,9 +1,9 @@
 #No questions
 
-LT plugin that suppresses most of `Do you want to save/discard changes?`
-dialogs.
+LT plugin which suppresses most of `Do you want to save..?` dialogs.
 
 Currently does the following:
 
-  * Always reloads files changed outside of LT whether they have unsaved changes or not
-  * Closes editors (tabs) for deleted files instead of marking them as dirty.
+  * When file was changed - always reload corresponding editor (whether it is dirty or not)
+  * When file was deleted - close corresponding editor
+  * When closing an editor with no corresponding file (e.g. Instarepl) - just close it.
