@@ -11,9 +11,7 @@ I personally also removed `:lt.objs.editor.file/dirty-on-change` from all transi
 in my `user.behaviors`
 
 ```
-...
 {:- {:editor.transient [:lt.objs.editor.file/dirty-on-change]
-...
 ```
 
 This allows to close editors not backed by file (e.g. Instarepl, New File) instantly without questions.
