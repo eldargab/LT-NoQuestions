@@ -1,0 +1,5 @@
+{:name "NoQuestions"
+ :author "Eldar Gabdullin"
+ :source "https://github.com/eldargab/LT-NoQuestions"
+ :desc "Never ask questions about saving files"
+ :behaviors "noquestions.behaviors"}
