@@ -1,5 +1,5 @@
 {:+ {:app [(:lt.objs.plugins/load-js "noquestions_compiled.js" true)]
-     :workspace [:noquestions.core/watched.delete
-                 :noquestions.core/watched.update]}
+     :workspace [:noquestions.core/close-editor-on-watched-delete
+                 :noquestions.core/reload-editor-on-watched-update]}
  :- {:workspace [:lt.objs.editor.pool/watched.delete
                  :lt.objs.editor.pool/watched.update]}}

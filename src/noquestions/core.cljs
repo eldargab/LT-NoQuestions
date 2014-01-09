@@ -6,7 +6,7 @@
   (:require-macros [lt.macros :refer [behavior]]))
 
 
-(behavior ::watched.delete
+(behavior ::close-editor-on-watched-delete
           :triggers #{:watched.delete}
           :reaction (fn [ws del]
                       (if-let [ed (first (pool/by-path del))]
@@ -18,7 +18,7 @@
                           (doseq [ed open]
                             (object/raise ed :close.force))))))
 
-(behavior ::watched.update
+(behavior ::reload-editor-on-watched-update
           :triggers #{:watched.update}
           :reaction (fn [ws f stat]
                       (when (files/file? f)

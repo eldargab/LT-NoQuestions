@@ -10,7 +10,7 @@ goog.require('lt.objs.document');
 goog.require('lt.objs.editor.pool');
 goog.require('lt.objs.editor.pool');
 
-noquestions.core.__BEH__watched__DOT__delete = (function __BEH__watched__DOT__delete(ws,del){var temp__4090__auto__ = cljs.core.first.call(null,lt.objs.editor.pool.by_path.call(null,del));if(cljs.core.truth_(temp__4090__auto__))
+noquestions.core.__BEH__close_editor_on_watched_delete = (function __BEH__close_editor_on_watched_delete(ws,del){var temp__4090__auto__ = cljs.core.first.call(null,lt.objs.editor.pool.by_path.call(null,del));if(cljs.core.truth_(temp__4090__auto__))
 {var ed = temp__4090__auto__;return lt.object.raise.call(null,ed,new cljs.core.Keyword(null,"close.force","close.force",4409585383));
 } else
 {var open = cljs.core.filter.call(null,(function (p1__8357_SHARP_){var temp__4090__auto____$1 = new cljs.core.Keyword(null,"path","path",1017337751).cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"info","info",1017141280).cljs$core$IFn$_invoke$arity$1(cljs.core.deref.call(null,p1__8357_SHARP_)));if(cljs.core.truth_(temp__4090__auto____$1))
@@ -68,9 +68,9 @@ break;
 }
 }
 });
-lt.object.behavior_STAR_.call(null,new cljs.core.Keyword("noquestions.core","watched.delete","noquestions.core/watched.delete",4080097318),new cljs.core.Keyword(null,"reaction","reaction",4441361819),noquestions.core.__BEH__watched__DOT__delete,new cljs.core.Keyword(null,"triggers","triggers",2516997421),new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"watched.delete","watched.delete",766354781),null], null), null));
+lt.object.behavior_STAR_.call(null,new cljs.core.Keyword("noquestions.core","close-editor-on-watched-delete","noquestions.core/close-editor-on-watched-delete",4266158952),new cljs.core.Keyword(null,"reaction","reaction",4441361819),noquestions.core.__BEH__close_editor_on_watched_delete,new cljs.core.Keyword(null,"triggers","triggers",2516997421),new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"watched.delete","watched.delete",766354781),null], null), null));
 
-noquestions.core.__BEH__watched__DOT__update = (function __BEH__watched__DOT__update(ws,f,stat){if(cljs.core.truth_(lt.objs.files.file_QMARK_.call(null,f)))
+noquestions.core.__BEH__reload_editor_on_watched_update = (function __BEH__reload_editor_on_watched_update(ws,f,stat){if(cljs.core.truth_(lt.objs.files.file_QMARK_.call(null,f)))
 {var temp__4092__auto__ = cljs.core.first.call(null,lt.objs.editor.pool.by_path.call(null,f));if(cljs.core.truth_(temp__4092__auto__))
 {var ed = temp__4092__auto__;if(cljs.core.truth_(lt.objs.document.check_mtime.call(null,lt.objs.document.__GT_stats.call(null,f),stat)))
 {return null;
@@ -84,7 +84,7 @@ noquestions.core.__BEH__watched__DOT__update = (function __BEH__watched__DOT__up
 {return null;
 }
 });
-lt.object.behavior_STAR_.call(null,new cljs.core.Keyword("noquestions.core","watched.update","noquestions.core/watched.update",4568114436),new cljs.core.Keyword(null,"reaction","reaction",4441361819),noquestions.core.__BEH__watched__DOT__update,new cljs.core.Keyword(null,"triggers","triggers",2516997421),new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"watched.update","watched.update",1262966907),null], null), null));
+lt.object.behavior_STAR_.call(null,new cljs.core.Keyword("noquestions.core","reload-editor-on-watched-update","noquestions.core/reload-editor-on-watched-update",1700299971),new cljs.core.Keyword(null,"reaction","reaction",4441361819),noquestions.core.__BEH__reload_editor_on_watched_update,new cljs.core.Keyword(null,"triggers","triggers",2516997421),new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"watched.update","watched.update",1262966907),null], null), null));
 
 }
 
