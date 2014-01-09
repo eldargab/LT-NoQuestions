@@ -15,3 +15,7 @@ in my `user.behaviors`
 ```
 
 This allows to close editors not backed by file (e.g. Instarepl, New File) instantly without questions.
+
+##Installation
+
+Available in the central plugin repository.
