@@ -19,3 +19,5 @@ This allows to close editors not backed by file (e.g. Instarepl, New File) insta
 ##Installation
 
 Available in the central plugin repository.
+You might need to run `Refresh plugin list`, `Reload app behaviors`
+commands after installation.
