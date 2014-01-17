@@ -1,4 +1,4 @@
-(ns noquestions.core
+(ns lt.plugins.noquestions
   (:require [lt.objs.editor.pool :as pool]
             [lt.objs.document :as doc]
             [lt.objs.files :as files]
